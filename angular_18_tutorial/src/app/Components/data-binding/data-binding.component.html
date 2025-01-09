@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-4">
+        one-way from .ts to html
+    </div>
+    <div class="col-4">
+        
+    </div>
+    <div class="col-4">
+        
+    </div>
+</div>
+<div class="row">
+    Interpolation
+    <div class="col-4">
+        <div class="row">
+            <div class="col-4">
+                {{coursename}}
+                <input type="text" value="{{coursename}}" placeholder="Enter Text">
+                <input type="{{inputType}}">
+            </div>
+        </div>
+        <div class="col-4">
+            Property binding 
+        </div>
+        <div [class]="myClassName">
+            Danger
+        </div>
+        <input type="text" [value]="coursename">
+
+        <input [type]="inputType">
+
+        
+    <div class="col-4">
+        <button class="btn btn-success" (click)="showAlert('This is the angular application')">Show wolcome</button>
+        <span (click)="showAlert('span event ')">Click me</span>
+        <button class="btn btn-success" (click)="changeCoursename()">hange course</button>
+    </div>
+    <div class="col-4">
+    </div>
+
+
+
+
+
+    <div class="col-4">
+       <input type="text" [(ngModel)]="coursename">{{coursename}}
+    </div>
+    <div class="col-4">
+        <h2>{{firstName()}}</h2>
+    </div>
+</div>

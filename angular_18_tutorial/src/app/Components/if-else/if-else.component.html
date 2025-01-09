@@ -1,0 +1,88 @@
+<div class="row pt-3">
+    <div class="col-3">
+        @if(divOneVisible==true){
+            <div class="bg-danger p-3 text-center">
+                <h4>Div-1</h4>
+            </div>
+        }
+       
+    </div>
+
+    @if(isWorningDivVisible){
+        <div class="col-3">
+            <div class="pt-3 text-center bg-warning">
+                <h4>Div-2</h4>
+            </div>
+        </div>
+        
+    }
+    @else{
+        <div class="col-3">
+            <div class="pt-3 text-center bg-success">
+                <h4>Div-2</h4>
+            </div>
+        </div>
+       
+    }
+    @if(num1==num2){
+        <div class="col-3">
+            <div class="pt-3 text-center bg-success">
+                <h4>Div-2</h4>
+            </div>
+        </div>
+    }
+
+   
+  
+
+
+    <div class="col-3">
+        <div class="bg-success p-3 text-center" >
+            @if(selectedState=='Active'){
+                <p>Student is Active</p>
+            }
+            @else if(selectedState=='De-Active'){
+                <p>Student is NotActive</p>
+            }
+           @else{
+                <p>Student is Pending</p>
+           }
+           
+           
+        </div>
+    </div>
+    
+   
+</div>
+
+<div class="row pt-3">
+    <div class="col-3">
+        <div class="bg-danger p-3 text-center" >
+           <button class="btn btn-danger" (click)="hideDiv1()">Hide</button>
+           <button class="bun btn-primary mx-2" (click)="showDiv1()">Show</button>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-success p-3 text-center">
+            <button (click)="toggleDiv2()">Click</button>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-success p-3 text-center">
+           <input type="text" [(ngModel)]="num1" placeholder="Num1">
+            <input type="text" [(ngModel)]="num2" placeholder="Num2">
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-success p-3 text-center">
+           <select [(ngModel)]="selectedState">
+                <option value="Select The Status">Select State</option>
+                <option value="Active">Active</option>
+                <option value="De-Active">De-Active</option>
+                <option value="Pending">Pending</option>
+           </select>
+        </div>
+    </div>
+   
+</div>
+
