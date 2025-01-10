@@ -1,0 +1,15 @@
+<p>get-api works!</p>
+<div class="row">
+    <div class="col-2">
+        <button class="btn btn-success" (click)="getAllUser()">GetAllUsers</button>
+        <button class="btn btn-success" (click)="getAllCustomer()">GetAllUsers</button>
+ 
+    </div>
+    <div class="col-3">
+        <select class="form-select">
+            @for(item of userList;track $index){
+                <option value="">{{item.name}}</option>
+            }
+        </select>
+    </div>
+</div>

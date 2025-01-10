@@ -1,0 +1,18 @@
+
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header">New Department</div>
+    <div class="card-body text-primary">
+        <div>
+            <label for="">Department Name</label>
+            <input type="text" [(ngModel)]="departmentObj.departmentName" placeholder="Enter Name">
+        </div>
+        <div>
+            <label for="">Department Logo</label>
+            <input type="text" [(ngModel)]="departmentObj.departmentLogo" placeholder="Enter URL">
+        </div>
+</div>
+
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+    <button >Reset</button>
+    <button (click)="onSave()">Save</button>
+</div>

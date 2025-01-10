@@ -1,0 +1,40 @@
+<p>pipe-component works!</p>
+<h4>Pipe component</h4>
+<h3>Default and custome pipes</h3>
+
+<div class="row">
+    <div class="col-3">
+        Origina value-{{firstName}}
+        <br>
+        after Pipe- {{firstName | uppercase}}
+    </div>
+    <div class="col-3">
+        Origina value-{{firstName}}
+        <br>
+        after Pipe- {{firstName | lowercase}}
+    </div>
+    <div class="col-3">
+        Origina value-{{str}}
+        <br>
+        after Pipe-{{str | titlecase}}
+    </div>
+    <div class="col-3">
+        Origina value-{{currentDate}}
+        <br>
+        after Pipe-{{currentDate | date}}
+    </div>
+   
+
+</div>
+<div class="row">
+    <div class="col-3">
+        Origina value-{{currnetTime}}
+        <br>
+        after Pipe-{{currnetTime | async | date:'hh:mm:ss'}}
+    </div>
+    <div class="col-3">
+        Origina value-{{student.state}}
+        <br>
+        after Pipe-{{student.state | na}}   
+    </div>
+</div>
